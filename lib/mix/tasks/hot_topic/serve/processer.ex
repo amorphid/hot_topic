@@ -4,7 +4,6 @@ defmodule Mix.Tasks.HotTopic.Serve.Processer do
   @type processed_args :: [any()]
   @type value :: term()
 
-
   @args ["port"]
 
   @spec process(command_line_args()) :: args()

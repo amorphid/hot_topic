@@ -12,20 +12,20 @@ defmodule HotTopic.Mixfile do
   end
 
   def application do
-    [applications: [:logger]]
+    [applications: [:logger],
+     mod: {HotTopic, []}]
   end
-
 
   defp deps do
     [{:dialyxir, "~> 0.3", only: [:dev]}]
   end
 
   defp dialyzer do
-    [flags: ~w(-Werror_handling
+    [flags: ~w(--fullpath
+               -Werror_handling
                -Wno_opaque
                 -Woverspecs
                -Wrace_conditions
-               -Wunderspecs
                -Wunknown
                -Wunmatched_returns)]
   end
