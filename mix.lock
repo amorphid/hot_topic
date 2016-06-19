@@ -1,0 +1,2 @@
+%{"dialyxir": {:hex, :dialyxir, "0.3.3", "2f8bb8ab4e17acf4086cae847bd385c0f89296d3e3448dc304c26bfbe4b46cb4", [:mix], []},
+  "dialyze": {:hex, :dialyze, "0.2.1", "9fb71767f96649020d769db7cbd7290059daff23707d6e851e206b1fdfa92f9d", [:mix], []}}
