@@ -1,0 +1,2 @@
+defmodule HotTopic do
+end
