@@ -18,7 +18,7 @@ defmodule Mix.Tasks.HotTopic.Serve.Processer do
   defp process_args(args) do
     for arg <- args, is_binary(arg),
                      arg =~ ~r/.+:.+/,
-                     String.starts_with?(arg, @args) do
+                     String.starts_with?(arg <> ":", @args) do
       arg
       |> String.split(":", parts: 2)
       |> List.to_tuple
